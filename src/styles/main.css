@@ -1,0 +1,147 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900);
+@import "./buttons.css";
+@import "./transparentCard.css";
+@import "./post.css";
+@import "./login.css";
+@import "./popup.css";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.circle-purple {
+  position: fixed;
+  width: 850px;
+  height: 850px;
+  left: 832px;
+  top: -98px;
+
+  background: rgba(195, 173, 246, 0.98);
+  filter: blur(100px);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.circle-pink {
+  position: fixed;
+  width: 1106px;
+  height: 1106px;
+  left: -449px;
+  top: -370px;
+
+  background: rgba(248, 206, 236, 0.98);
+  filter: blur(100px);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.container {
+  display: grid;
+  padding: 20px;
+  height: 100vh;
+  grid-template-columns: 320px 700px 320px;
+  column-gap: 30px;
+}
+
+.main-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.left-sidebar {
+  display: flex;
+}
+
+.right-sidebar {
+  display: flex;
+}
+
+textarea {
+  font-family: "Roboto";
+}
+
+.error-header {
+  display: flex;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  /* identical to box height, or 101% */
+
+  text-align: center;
+  letter-spacing: -0.015em;
+
+  margin: 0 auto;
+  margin-top: 50px;
+
+  /* Text/Muted */
+
+  color: #38414d;
+}
+
+.error-header-small {
+  display: flex;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 120%;
+  /* identical to box height, or 16px */
+
+  text-align: center;
+
+  margin: 0 auto;
+
+  /* Text/Muted */
+
+  color: #38414d;
+}
+
+.unsuported-error-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.account-name-header {
+  position: absolute !important;
+  display: flex !important;
+  width: 260px !important;
+  height: 45px !important;
+  left: 12px !important;
+  top: 15px !important;
+
+  background: #f7f8ff !important;
+  box-shadow: 0px 20px 50px rgba(247, 248, 255, 0.41) !important;
+  border-radius: 15px !important;
+}
+
+.account-name-header > p {
+  margin: 0 auto;
+  margin-top: 10px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+  /* identical to box height, or 24px */
+  letter-spacing: -0.015em;
+
+  /* Text/Muted */
+
+  color: #38414d;
+}
+
+.vibe-logo-blue {
+  position: relative;
+  background-image: url("../assets/vibeLogoBlue.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 10px 0 0 10px;
+  width: 51px;
+  height: 37px;
+}

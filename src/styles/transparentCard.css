@@ -1,0 +1,72 @@
+.transparent-card-big {
+  /* position: relative;
+  width: 100%; */
+  padding: 18px 16px;
+  background: radial-gradient(
+      100% 249.45% at 0% 2.78%,
+      rgba(255, 255, 255, 0.6) 0%,
+      rgba(255, 255, 255, 0) 100%
+    )
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+
+  backdrop-filter: blur(11px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 10px;
+}
+
+.transparent-card-big-border {
+  border: 16px solid rgba(255, 255, 255, 0.24);
+  border-radius: 25px;
+  overflow-y: "scroll";
+}
+
+.transparent-card-medium {
+  position: relative;
+  width: 100%;
+  height: 353px;
+  background: radial-gradient(
+      100% 249.45% at 0% 2.78%,
+      rgba(255, 255, 255, 0.6) 0%,
+      rgba(255, 255, 255, 0) 100%
+    )
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+
+  backdrop-filter: blur(11px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 25px;
+}
+
+.transparent-card-medium > div {
+  border: 16px solid rgba(255, 255, 255, 0.24);
+  position: relative;
+  width: 285px;
+  height: 320px;
+  border-radius: 25px;
+}
+
+.transparent-card-small {
+  position: relative;
+  width: 100%;
+  height: 110px;
+  background: radial-gradient(
+      100% 249.45% at 0% 2.78%,
+      rgba(255, 255, 255, 0.6) 0%,
+      rgba(255, 255, 255, 0) 100%
+    )
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+
+  backdrop-filter: blur(11px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 25px;
+}
+
+.transparent-card-small > div {
+  border: 16px solid rgba(255, 255, 255, 0.24);
+  position: relative;
+  width: 285px;
+  height: 78px;
+  border-radius: 25px;
+}

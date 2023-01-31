@@ -1,0 +1,88 @@
+.button-blue-big {
+  position: absolute;
+  bottom: 0; /* this will place the button at the bottom of the blue box */
+  width: 263px;
+  height: 49px;
+  left: 50%;
+  top: 80%;
+  transform: translate(-50%, 0%);
+
+  background: #3672e9;
+  box-shadow: 0px 20px 50px rgba(54, 114, 233, 0.41);
+  border-radius: 15px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  /* identical to box height, or 24px */
+
+  text-align: center;
+  letter-spacing: -0.015em;
+
+  color: #ffffff;
+}
+
+.button-blue-big > p {
+  position: relative;
+  margin-top: 12.5px;
+}
+
+.button-blue-small {
+  display: inline-flex;
+  position: absolute;
+  width: 153px;
+  height: 49px;
+  left: 75%;
+  top: 40%;
+  background: #3672e9;
+  box-shadow: 0px 20px 50px rgba(54, 114, 233, 0.41);
+  border-radius: 15px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  /* identical to box height, or 24px */
+
+  text-align: center;
+  letter-spacing: -0.015em;
+
+  color: #ffffff;
+}
+
+.button-blue-small > p {
+  position: relative;
+  margin: 0 auto;
+  top: 13px;
+}
+
+.button-blue-error-big {
+  width: 263px;
+  height: 48px;
+  left: 212px;
+  top: 104px;
+
+  background: #3672e9;
+  box-shadow: 0px 20px 50px rgba(54, 114, 233, 0.41);
+  border-radius: 15px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  /* identical to box height, or 24px */
+
+  text-align: center;
+  letter-spacing: -0.015em;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 40px;
+
+  color: #ffffff;
+}
+
+.button-blue-error-big > p {
+  position: relative;
+  margin-top: 12.5px;
+}

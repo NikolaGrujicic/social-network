@@ -1,0 +1,131 @@
+.login-page-container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 750px auto;
+  color: white;
+}
+
+.login-image-container {
+  background-image: url("../assets/loginImageSvg.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.login-form-heading {
+  position: absolute;
+  top: 220px;
+  line-height: 120%;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  font-family: "Roboto";
+  text-align: center;
+  color: #38414d;
+}
+
+.login-form-paragraph {
+  position: absolute;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  top: 320px;
+  text-align: center;
+  color: #38414d;
+}
+
+.login-form-paragraph > a {
+  color: #3672e9;
+  text-decoration: underline;
+}
+
+.login-form-container {
+  width: 48%;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.metamask-button {
+  position: absolute;
+  top: 400px;
+  width: 336px;
+  height: 83px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.24);
+  backdrop-filter: blur(11px);
+}
+
+.metamask-logo {
+  background-image: url("../assets/metamaskLogo.svg");
+  width: 43px;
+  height: 39px;
+  /* margin: 20px 0px 0px 10px; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 50px;
+}
+
+.metamask-text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  /* line-height: 18px; */
+  color: #38414d;
+  margin-left: 30px;
+}
+
+.wallet-connect-button {
+  position: absolute;
+  top: 500px;
+  width: 336px;
+  height: 83px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.24);
+  backdrop-filter: blur(11px);
+}
+
+.wallet-connect-logo {
+  background-image: url("../assets/walletConnectLogo.svg");
+  width: 43px;
+  height: 39px;
+  /* margin: 20px 0px 0px 10px; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 50px;
+}
+
+.wallet-connect-text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  /* line-height: 18px; */
+  color: #38414d;
+  margin-left: 30px;
+}
+
+.login-button-container {
+  display: flex;
+  align-items: center;
+  padding: 20px 20px;
+}
+
+.vibe-logo {
+  position: absolute;
+  background-image: url("../assets/vibeLogo.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 180px;
+  height: 130px;
+  top: 40%;
+  left: 20%;
+}

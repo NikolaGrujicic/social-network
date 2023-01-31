@@ -1,0 +1,158 @@
+.post-timeline-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 60px;
+}
+
+.post-timeline-header {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+  /* identical to box height, or 24px */
+
+  letter-spacing: -0.015em;
+
+  color: #38414d;
+}
+
+.write-post-textarea {
+  display: inline-flex;
+  border: none;
+  width: 400px;
+  height: 60px;
+  margin-top: 6px;
+  background-color: transparent;
+  overflow: auto;
+  outline: none;
+
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+
+  resize: none;
+}
+
+.write-post-image {
+  display: inline-flex;
+  background-image: url("../assets/imageGreen.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 32px;
+  height: 32px;
+}
+
+.write-post-container {
+  display: flex;
+  gap: 15px;
+  padding: 10px;
+}
+
+.write-post-card {
+  width: 660px;
+  height: 105px;
+  background: radial-gradient(
+      100% 249.45% at 0% 2.78%,
+      rgba(255, 255, 255, 0.6) 0%,
+      rgba(255, 255, 255, 0) 100%
+    )
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  border: 2px solid rgba(255, 255, 255, 0.24);
+  backdrop-filter: blur(11px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 16px;
+}
+
+.timeline-feed-post-card {
+  width: 660px;
+  background: radial-gradient(
+      100% 249.45% at 0% 2.78%,
+      rgba(255, 255, 255, 0.6) 0%,
+      rgba(255, 255, 255, 0) 100%
+    )
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  border: 2px solid rgba(255, 255, 255, 0.24);
+  backdrop-filter: blur(11px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 16px;
+}
+
+.post-container {
+  display: grid;
+  grid-column: 1 / -1;
+  grid-template-columns: 60px auto 20px;
+  gap: 15px;
+  padding: 15px;
+}
+
+.post-image {
+  grid-column: 1;
+  grid-row: 1 / 3;
+  background-image: url("../assets/imageGreen.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 60px;
+  height: 60px;
+}
+
+.post-header {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  margin-top: 10px;
+}
+
+.post-text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  width: 100%;
+  /* or 101% */
+
+  letter-spacing: -0.015em;
+
+  color: #38414d;
+}
+
+.post-dots {
+  background-image: url("../assets/dots.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 15px;
+  height: 4px;
+  margin-top: 5px;
+}
+
+.post-coins-icon {
+  grid-column: 2;
+  grid-row: 3;
+  background-image: url("../assets/coins.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 18px;
+  height: 16.5px;
+}
+
+.post-share-icon {
+  grid-column: 2;
+  grid-row: 3;
+  background-image: url("../assets/share.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 18px;
+  height: 16.5px;
+  margin-left: 110px;
+}

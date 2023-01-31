@@ -1,0 +1,132 @@
+.popup-container {
+  position: fixed;
+  width: 720px;
+  height: 250px;
+  left: 25%;
+  top: 25%;
+
+  background: radial-gradient(
+      100% 249.45% at 0% 2.78%,
+      #ffffff 0%,
+      rgba(255, 255, 255, 0.71) 100%
+    )
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  backdrop-filter: blur(11px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 15px;
+}
+
+.popup-border {
+  position: absolute;
+  width: 717px;
+  height: 245px;
+  left: -15px;
+  top: -14px;
+  border: 16px solid rgba(255, 255, 255, 0.24);
+  border-radius: 25px;
+}
+
+.popup-button {
+  display: inline-flex;
+  position: absolute;
+  width: 153px;
+  height: 49px;
+  left: 75%;
+  top: 40%;
+  background: #3672e9;
+  box-shadow: 0px 20px 50px rgba(54, 114, 233, 0.41);
+  border-radius: 15px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  /* identical to box height, or 24px */
+
+  text-align: center;
+  letter-spacing: -0.015em;
+
+  color: #ffffff;
+}
+
+.donate-popup-button-text {
+  position: absolute;
+  top: 20%;
+  left: 45px;
+}
+
+.popup-close {
+  position: absolute;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  left: 690px;
+  top: 15px;
+  color: rgb(113, 113, 113);
+}
+
+.popup-error {
+  position: relative;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: small;
+  left: 150px;
+  top: 150px;
+  color: rgb(254, 127, 127);
+  margin-bottom: 15px;
+}
+
+.popup-input {
+  display: inline-flex;
+  position: absolute;
+  left: 20%;
+  top: 40%;
+  width: 300px;
+  border: none;
+  background-color: transparent;
+  overflow: auto;
+  outline: none;
+
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  resize: none;
+}
+
+.popup-textarea {
+  display: inline-flex;
+  position: absolute;
+  left: 20%;
+  top: 40%;
+  width: 300px;
+  height: 100px;
+  border: none;
+  background-color: transparent;
+  overflow: auto;
+  outline: none;
+
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  resize: none;
+}
+
+.popup-write-post-image {
+  position: relative;
+  background-image: url("/src/assets/imageGreen.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 32px;
+  height: 32px;
+  left: 100px;
+  top: 90px;
+}
+
+.popup-write-post-button-text {
+  position: absolute;
+  top: 23%;
+  left: 57px;
+}
