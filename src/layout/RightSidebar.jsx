@@ -10,7 +10,11 @@ const RightSidebar = () => {
     if (account) {
       const provider = new ethers.providers.Web3Provider(ethereum);
       const ensDomain = await provider.lookupAddress(account);
-      setAccountName(ensDomain?.trim().length > 0 ? ensDomain : account);
+      let accountNumber = "";
+      if (account?.trim().length > 10) {
+        accountNumber = account?.trim().slice(0, 9).concat("...");
+      }
+      setAccountName(ensDomain?.trim().length > 0 ? ensDomain : accountNumber);
     }
   };
 

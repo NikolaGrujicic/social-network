@@ -12,12 +12,12 @@
   backdrop-filter: blur(11px);
   /* Note: backdrop-filter has minimal browser support */
 
-  border-radius: 10px;
+  border-radius: 25px;
 }
 
 .transparent-card-big-border {
   border: 16px solid rgba(255, 255, 255, 0.24);
-  border-radius: 25px;
+  border-radius: 40px;
   overflow-y: "scroll";
 }
 
@@ -35,7 +35,7 @@
   backdrop-filter: blur(11px);
   /* Note: backdrop-filter has minimal browser support */
 
-  border-radius: 25px;
+  border-radius: 40px;
 }
 
 .transparent-card-medium > div {
@@ -43,7 +43,7 @@
   position: relative;
   width: 285px;
   height: 320px;
-  border-radius: 25px;
+  border-radius: 40px;
 }
 
 .transparent-card-small {
@@ -60,7 +60,7 @@
   backdrop-filter: blur(11px);
   /* Note: backdrop-filter has minimal browser support */
 
-  border-radius: 25px;
+  border-radius: 40px;
 }
 
 .transparent-card-small > div {
@@ -68,5 +68,5 @@
   position: relative;
   width: 285px;
   height: 78px;
-  border-radius: 25px;
+  border-radius: 40px;
 }

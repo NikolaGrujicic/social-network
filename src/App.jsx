@@ -1,12 +1,12 @@
 import { Route, Routes } from "react-router-dom";
 import { Login, SocialNetwork } from "./pages";
-import DonatePopup from "./components/DonatePopup";
+import SponsorPostPopup from "./components/SponsorPostPopup";
 import WritePostPopup from "./components/WritePostPopup";
 import { useSocialNetworkStore } from "./store/SocialNetworkStore";
 
 function App() {
-  const showDonatePopup = useSocialNetworkStore(
-    (state) => state.showDonatePopup
+  const showSponsorPostPopup = useSocialNetworkStore(
+    (state) => state.showSponsorPostPopup
   );
   const showWritePostPopup = useSocialNetworkStore(
     (state) => state.showWritePostPopup
@@ -19,7 +19,7 @@ function App() {
       </Routes>
       <div className="circle-purple" />
       <div className="circle-pink" />
-      {showDonatePopup ? <DonatePopup /> : ""}
+      {showSponsorPostPopup ? <SponsorPostPopup /> : ""}
       {showWritePostPopup ? <WritePostPopup /> : ""}
     </div>
   );

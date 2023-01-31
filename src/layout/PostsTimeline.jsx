@@ -11,9 +11,10 @@ import {
   getLatestPostID,
   createPost,
 } from "../service/SocialNetworkService";
+import Search from "../components/Search";
 
 const PostsTimeline = () => {
-  const { error } = useWeb3React();
+  const { error, chainId } = useWeb3React();
   const isUnsupportedChainIdError = error instanceof UnsupportedChainIdError;
 
   const ref = useRef(null);
@@ -109,6 +110,17 @@ const PostsTimeline = () => {
     }
   }, [postsBatch]);
 
+  useEffect(() => {
+    if (chainId == 5) {
+      fetchPosts();
+    }
+  }, [chainId]);
+
+  useEffect(() => {
+    if (isUnsupportedChainIdError == true) {
+      setPosts([]);
+    }
+  }, [isUnsupportedChainIdError]);
   return (
     <div className="transparent-card-big-border">
       <div className="transparent-card-big">
@@ -117,6 +129,7 @@ const PostsTimeline = () => {
             <UnsuportedNetworkError />
           ) : (
             <>
+              <Search />
               <p className="post-timeline-header">Update your Vibe</p>
               <WritePost createNewPost={createNewPost} />
               <p className="post-timeline-header">Feed</p>

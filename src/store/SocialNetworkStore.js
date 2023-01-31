@@ -7,7 +7,7 @@ export const useSocialNetworkStore = create((set) => ({
   donationPostId: 0,
   numberOfPostsToFetch: 10,
   numberOfPostsLeft: 0,
-  showDonatePopup: false,
+  showSponsorPostPopup: false,
   showWritePostPopup: false,
   fetchPostsAgain: false,
   setPosts: (posts) => set(() => ({ posts: posts })),
@@ -19,7 +19,8 @@ export const useSocialNetworkStore = create((set) => ({
   setNumberOfPostsToFetch: (number) =>
     set(() => ({ numberOfPostsToFetch: number })),
   setDonationPostId: (id) => set(() => ({ donationPostId: id })),
-  setShowDonatePopup: (show) => set(() => ({ showDonatePopup: show })),
+  setShowSponsorPostPopup: (show) =>
+    set(() => ({ showSponsorPostPopup: show })),
   setShowWritePostPopup: (show) => set(() => ({ showWritePostPopup: show })),
   addPosts: (posts) => set((state) => ({ posts: state.posts.concat(posts) })),
   setLatestPostId: (id) => set(() => ({ latestPostId: id })),

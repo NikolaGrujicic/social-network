@@ -3,8 +3,8 @@ import { ethers } from "ethers";
 import { useSocialNetworkStore } from "../store/SocialNetworkStore";
 
 const Post = ({ ownerAddress, text, id }) => {
-  const setShowDonatePopup = useSocialNetworkStore(
-    (state) => state.setShowDonatePopup
+  const setShowSponsorPostPopup = useSocialNetworkStore(
+    (state) => state.setShowSponsorPostPopup
   );
 
   const setDonationPostId = useSocialNetworkStore(
@@ -23,7 +23,7 @@ const Post = ({ ownerAddress, text, id }) => {
   };
 
   const showPopup = () => {
-    setShowDonatePopup(true);
+    setShowSponsorPostPopup(true);
     setDonationPostId(id);
   };
 

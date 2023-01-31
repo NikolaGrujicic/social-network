@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { useSocialNetworkStore } from "../store/SocialNetworkStore";
 import { createPost } from "../service/SocialNetworkService";
 
