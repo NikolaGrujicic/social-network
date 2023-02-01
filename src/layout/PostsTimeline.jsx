@@ -68,9 +68,6 @@ const PostsTimeline = () => {
     await createPost(text);
     await fetchPosts();
   };
-  //   const id = await getLatestPostID();
-  //   setLatestPostId(id);
-  // };
 
   const trackScrolling = (isVisible) => {
     if (
