@@ -89,7 +89,6 @@ export const getPostById = async (id) => {
     const post = await socialNetwork.getPost(id);
     console.log("fetched!");
     return post;
-    //setPostCreatorAccount(post.owner);
   } catch (error) {
     console.log(error);
   }
